@@ -19,13 +19,21 @@
             <button type="submit" name="agregar" id="agregar">agregar</button>
         </div>
         <div name="lectura-datos" >
-            <form id="area-inputs" name="formulario" class="oculto" >
-                <p>zona para lectura de datos</p>
+            <form  name="formulario"  class="oculto">
+                <div id="area-inputs" class="oculto">
+                    <p>Ingrese por favor la edad de cada integrante del grupo familiar</p>
+                    
+                     
+                </div>
+                <button id="calcular" type="submit" class="oculto">calcular</button>
             </form>
             
         </div>
         <div id="area-estadisticas" name="estadisticas" class="oculto">
-            <p>zona para estadisticas</p>
+            
+            <p>La mayor edad es: <strong id="mayor-edad"></strong></p>
+            <p>La menor edad es: <strong id="menor-edad"></strong></p>
+            <p>La edad promedio es: <strong id="promedio-edad"></strong></p>
         </div>
     </main>
     <footer>
