@@ -11,3 +11,26 @@ Objetivo:
 
 3. Agregar validaciones y pruebas unitarias.
 
+# Index HTML
+
+1. Creo un html desde 0 con la plantilla mínima de VSCode. Tenemos en cuenta de mover los scripts al final del body para que se ejecuten luego de cargar el index.html
+2. Creo el título y 3 áreas diferentes en el main: 
+  a) para pedir la cantidad de personas
+  b) para mostrar los labels e inputs para ingresar los datos
+  c) para mostrar los resultados (que tiene que estar oculta al principio del programa)
+
+# Script Main
+
+1. Declaro los elementos HTML con los que voy a trabajar, que son los botones agregar integrantes, calcular, y las zonas para ingresar datos y para mostrar resultados
+
+# Script Funciones
+
+1. Funciones para mostrar el area de inputs que estaba oculta;
+2. Funciones para crear labels con una numeración y para crear inputs con clase="datos" para luego leer esta información
+
+1. Creo diferentes scripts en JS para a) guardar las funciones matemáticas que necesite, b) esribir las pruebas unitarias
+
+# CSS
+
+1. Este archivo lo armo desde cero y guardo información para modificar algunos colores, pero también para poder ocultar elementos cuando es necesario utilizando la propiedad display : none;, y marcar errores de modo visual con un borde rojo.
+
