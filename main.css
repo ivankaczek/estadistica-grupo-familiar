@@ -1,0 +1,25 @@
+body {
+    background: #e6e2d3;
+}
+
+h1 {
+    
+    color: #30322f;
+}
+
+#horas {
+    color: #30322f;
+}
+
+.oculto {
+    display: none;
+}
+
+footer {
+    background-color: #dac292;
+    color: #3e4444;
+}
+
+.error {
+    border: 2px solid red;
+}
