@@ -7,16 +7,31 @@ console.log($botonCalcular);
 function calcularEstadisticas(event){
     const edades = leerDatos();
     console.log(edades);
-    //mostrarEdad('mayor',edades);
-    let $mayorEdad = document.querySelector('#mayor-edad');
-    console.log($mayorEdad);
-    $mayorEdad.textContent = `${devolverMaximo(edades)} anios`;
+    
+    
 
-    let $menorEdad = document.querySelector('#menor-edad');
-    $menorEdad.textContent = `${devolverMinimo(edades)} anios`;
+    for(let i=0; i<edades.length; i++) {
+        if (edades[i] < 0) {
+            document.querySelector('#area-error').className = "";
+            document.querySelector('#area-error').textContent = "la edad debe ser mayor a cero!";
 
-    let $promedioEdad = document.querySelector('#promedio-edad');
-    $promedioEdad.textContent = `${promedio(edades)} anios`;
+        } else if(edades[i] >100) {
+            document.querySelector('#area-error').className = "";
+            document.querySelector('#area-error').textContent += " | es raro que la edad sea mayor a 100!";
+        } else {
+            let $mayorEdad = document.querySelector('#mayor-edad');
+    
+            $mayorEdad.textContent = `${devolverMaximo(edades)} anios`;
+
+            let $menorEdad = document.querySelector('#menor-edad');
+            $menorEdad.textContent = `${devolverMinimo(edades)} anios`;
+
+            let $promedioEdad = document.querySelector('#promedio-edad');
+            $promedioEdad.textContent = `${promedio(edades)} anios`;
+
+        }
+    }
+    
 
 
     event.preventDefault();

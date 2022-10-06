@@ -71,6 +71,10 @@ function leerDatos(){
     const $datos = document.querySelectorAll('.datos');
     for (let i = 0; i < $datos.length; i++) {
         const valor = Number($datos[i].value);
+        if(valor < 0 || valor > 100) {
+            $datos[i].className = "error";
+            
+        }
         edades.push(valor);
         
     }
